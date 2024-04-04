@@ -1,8 +1,70 @@
 .tablist{
     width: 30%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.loading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tabpannels{
-    border: 2px solid green;
+    margin-top: 20px;
+    /* border: 2px solid rgb(201, 19, 234); */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 50%;
+}
+
+.imgCont{
+    width: 100%;
+    /* border-radius: 20px; */
+    /* border: 2px solid blue; */
+}
+
+.image{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+
+}
+
+.customerDetail{
+    /* text-align: center; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+   
+    /* height: 100%; */
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gridContainer{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tabpannelCont{
+    height: 100vh;
+    background-color: #F7FAFC;
+
+}
+
+.superHeroes{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
