@@ -1,0 +1,8 @@
+.tablist{
+    width: 30%;
+    border: 2px solid red;
+}
+
+.tabpannels{
+    border: 2px solid green;
+}
