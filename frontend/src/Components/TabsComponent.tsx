@@ -12,11 +12,11 @@ const TabsComponent = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            // Increment the photo index circularly
-            setPhotoIndex(prevIndex => (prevIndex + 1) % 9); // Assuming 9 photos in the grid
-        }, 10000); // Change photo every 10 seconds
+            
+            setPhotoIndex(prevIndex => (prevIndex + 1) % 9); 
+        }, 10000);
 
-        return () => clearInterval(interval); // Cleanup function to clear interval
+        return () => clearInterval(interval); 
     }, []);
 
     const shufflePhotos = (photos: string[]) => {
@@ -37,8 +37,7 @@ const TabsComponent = () => {
     };
 
 
-    // style={{display: 'flex',}}
-    // style={{border: '2px solid green', display: 'flex', flexDirection: 'column', width: '30%', textAlign: 'left'}}
+    
     return (
         <div>
 
@@ -99,15 +98,7 @@ const TabsComponent = () => {
                             </TabPanel>
                         ))
                     }
-                    {/* <TabPanel>
-                        <p>one!</p>
-                    </TabPanel>
-                    <TabPanel>
-                        <p>two!</p>
-                    </TabPanel>
-                    <TabPanel>
-                        <p>three!</p>
-                    </TabPanel> */}
+                    
                 </TabPanels>
             </Tabs>
         </div>
